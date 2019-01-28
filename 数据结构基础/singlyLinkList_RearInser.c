@@ -31,7 +31,11 @@ LinkList CreatLinkListByRearInsert(int n){
 	L = (LNode*)malloc(sizeof(LNode));			//创建头结点
 	L -> next = NULL;			//头结点指针置为空
 	rear = L;		//尾指针指向头节点
+<<<<<<< HEAD
 	for(i = 0; i <= n - 1; i++)
+=======
+	for(i = 0; i <= n; i++)
+>>>>>>> aa389472f1e88799c43d9d9de4ae561ccbf9ec03
 	{
 		newNode = (LNode*)malloc(sizeof(LNode));			//创建新节点
 		printf("请输入第%d个元素的值:", i + 1);

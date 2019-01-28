@@ -29,10 +29,10 @@ LinkList CreatLinkListByHeadInsert(int n){
 	LinkList L = NULL;			//头指针置为空,不创立头节点
 	LNode *newNode;			
 	int i;
-	for(i = 1; i <= n; i++)
+	for(i = 0; i <= n; i++)
 	{
 		newNode = (LNode *)malloc(sizeof(LNode));			//生成新节点
-		printf("请输入第%d个元素的值：", i);
+		printf("请输入第%d个元素的值：", i + 1);
 		scanf("%d", &newNode->data);			//新节点数据域赋值
 		newNode->next = L;			//新节点的next为空
 		L = newNode;			//头指针指向新节点
